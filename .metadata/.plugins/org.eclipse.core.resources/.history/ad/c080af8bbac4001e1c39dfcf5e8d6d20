@@ -1,0 +1,5 @@
+package vw.him.springboot.springbootdemo2.configuration;
+
+public class AppConfiguration {
+
+}

@@ -1,0 +1,10 @@
+
+
+
+
+
+
+
+
+spring.mvc.view.prefix:/jsp/
+spring.mvc.view.suffix:.jsp

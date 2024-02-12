@@ -1,0 +1,39 @@
+JDBC Architecture -Java Database Connectivity -db and dbms platform independent
+
+
+java program (Client)--   library implementation   --database & dbms
+program-- sql query
+
+
+
+vendor-lockin/tight coupling not able to switch between technologies as we are not coding to common interfaces or common api/common specification irrespective of underlying database and dbms
+java-- oracle library(classes)--oracle dbms--oracle db
+
+JDBC API- specfication -dictates behaviour ,api-interfaces
+JDBC API (JSE)-(Connection,Statement,PreparedStatement,ResultSet)
+
+java program-using those interfaces    implementation class              DBMS&DB
+			
+Driver Interface						Mysql Driver class               mysql.jar
+
+										Mysql connection class
+										
+										Mysql Statement
+get connection 																			mysql db
+connection interface(connect(url,username,password)) ,statement interface,execute Query(sql query),ResultSet interface(next())
+
+
+
+same program                   OracleDriver,OracleStatement,							Oracle db,dbms
+																						Oracle jar
+								OracleResultSet
+								
+								
+         JPA architecture
+		JPA API  Specification                    JPA API Implementation						db and dbms
+java program --	Set of interfaces							Hibernate libraray classes           		mysql
+		EntityManager interface						TopLink library								mysql
+
+	Non common tight coupling -for diff library without jpa
+	not recommended -java program directly using orm libraray
+java program -- Hibernate library classes/interfaces----db(mysql)

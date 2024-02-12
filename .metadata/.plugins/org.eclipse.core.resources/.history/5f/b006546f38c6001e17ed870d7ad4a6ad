@@ -1,0 +1,13 @@
+JDBC Architecture -Java Database Connectivity
+
+
+java program (Client)--   library implementation   --database & dbms
+program-- sql query
+
+
+
+vendor-locking/tight coupling not able to switch between technologies as we are not coding to common interfaces or common api/common specification.
+java-- oracle library(classes)--oracle dbms--oracle db
+
+
+

@@ -1,0 +1,15 @@
+package vw.him.web.MVCDemo.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@RequestMapping("/webcntrl")
+@Controller
+public class GreetController {
+
+	@GetMapping("/greet")
+	public String greetAll() {
+		return "greetall";
+	}
+}

@@ -1,0 +1,12 @@
+spring framework :
+spring container
+	1. BeanFactory container uses BeanFactory  interface
+	2. ApplicationContext container,ConfigurableApplicationContext uses ApplicationContext interface -advance spring container
+	
+	ApplicationContext interface used by non springboot application
+	ConfigurableApplicationContext interface uses ApplicationContext interface uses sppringboot application
+	
+	
+ ApplicationContext interface extends from BeanFactory interface
+ 
+ 

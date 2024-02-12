@@ -1,0 +1,10 @@
+emp -dept
+
+
+
+emp-
+id(primary key),name,sal,p_id(foreign key)
+
+passport1-
+passportid(primary key),number,date,empid(fk
+

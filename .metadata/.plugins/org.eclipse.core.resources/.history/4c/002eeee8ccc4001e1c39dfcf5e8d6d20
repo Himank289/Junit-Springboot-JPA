@@ -1,0 +1,7 @@
+server.port:8085
+#logging.level.restcontrollers:DEBUG
+#logging.level.org.springframework:DEBUG
+employee.id:11
+employee.name:himank
+employee.salary:78900
+employee.deptno:10

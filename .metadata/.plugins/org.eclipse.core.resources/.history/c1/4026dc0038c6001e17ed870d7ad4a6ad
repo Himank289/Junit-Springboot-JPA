@@ -1,0 +1,5 @@
+JDBC Architecture -Java Database Connectivity
+
+
+java program (Client)--   library implementation   --database & dbms
+program-- sql query

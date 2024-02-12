@@ -1,0 +1,13 @@
+package vw.him.springboot.springbootdemo2.configuration;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@ConfigurationProperties("employee")
+public class EmployeeProperties {
+private int id;
+private String name;
+private double salary;
+private int deptno;
+}

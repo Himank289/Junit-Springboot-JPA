@@ -1,0 +1,11 @@
+package com.in28minutes.jpa.hibernate.demo.repository;
+
+import javax.persistence.EntityManager;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class CourseRepository {
+	@Autowired
+	EntityManager em;
+
+}

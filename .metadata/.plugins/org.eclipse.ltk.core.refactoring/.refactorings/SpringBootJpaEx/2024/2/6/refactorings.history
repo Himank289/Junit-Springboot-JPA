@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SpringBootJpaEx/SpringBootJpaEx_notes&apos; to &apos;SpringBootJpaEx_links&apos;" description="Rename resource &apos;SpringBootJpaEx_notes&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="SpringBootJpaEx_notes" name="SpringBootJpaEx_links" stamp="1707475336081" updateReferences="true"/>
+</session>

@@ -1,0 +1,7 @@
+server.port:8085
+
+
+employee.id:12
+employee.name:himank
+employee.salary:2000
+employee.dept:10

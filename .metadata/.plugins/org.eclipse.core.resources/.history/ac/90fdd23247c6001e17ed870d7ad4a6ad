@@ -1,0 +1,18 @@
+package com.in28minutes.jpa.hibernate.demo.repository;
+
+import javax.persistence.EntityManager;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.in28minutes.jpa.hibernate.demo.entity.Course;
+
+public class CourseRepository {
+	@Autowired
+	EntityManager em;
+	
+	public void save(Course c) {
+		em.persist(c);
+	}
+	
+
+}

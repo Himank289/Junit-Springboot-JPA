@@ -1,0 +1,23 @@
+package com.in28minutes.jpa.hibernate.demo.entity.Dao;
+
+import com.in28minutes.jpa.hibernate.demo.repository.CourseSpringDataJpaRepository;
+
+@Component
+public class CourseDao {
+@Autowired 
+private CourseSpringDataJpaRepository courserepo;
+
+public List<Course> getAllCourses(){
+	return courserepo.findAll();
+}
+
+public Course getCourseById(int id) {
+	return courserepo.findById(null);
+}
+public Course saveCourse(Course c) {
+	return courserepo.save(c);
+}
+
+
+	
+}

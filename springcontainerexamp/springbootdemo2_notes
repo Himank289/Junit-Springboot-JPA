@@ -1,8 +1,0 @@
-1. What is a role of browser,web server,web container inside webserver.
-2. what is the protocol used for communtication between browser and web server
-3. how springboot uses embedded tomcat server
-	springboot uses embedeed tomcat server
-	we call springboot as opinionated framework
-	springboot comes with lots of auto-configuration:default configuration
-	
-	springboot framework -default stuff -web server-tomcat
