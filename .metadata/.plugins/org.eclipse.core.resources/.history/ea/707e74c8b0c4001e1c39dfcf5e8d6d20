@@ -1,8 +1,0 @@
-spring.profiles.active=dev
-spring.profiles.active=test
-
-
-#logging.level.restcontrollers:DEBUG
-#logging.level.org.springframework:DEBUG
-##logging.level.org.apache.tomcat:DEBUG
-##logging.level.o.s.web.servlet.DispatcherServlet:DEBUG

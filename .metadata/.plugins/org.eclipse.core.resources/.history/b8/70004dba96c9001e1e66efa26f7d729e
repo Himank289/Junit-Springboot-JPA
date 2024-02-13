@@ -1,7 +1,0 @@
-
-
-server.port:8085
-
-#logging.level.org.springframework:debug
-spring.mvc.view.prefix:/jsp/
-spring.mvc.view.suffix:.jsp

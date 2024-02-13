@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy package &apos;restcontrollers&apos; to &apos;SpringBootJpaEx2_onetooneRestApi/src/main/java/com.in28minutes.jpa.hibernate.demo.entity&apos;&#x0D;&#x0A;- Original project: &apos;springbootdevop2&apos;&#x0D;&#x0A;- Destination element: &apos;SpringBootJpaEx2_onetooneRestApi/src/main/java/com.in28minutes.jpa.hibernate.demo.entity&apos;&#x0D;&#x0A;- Original element: &apos;springbootdevop2/src/main/java/restcontrollers&apos;" description="Copy package" destination="=SpringBootJpaEx2_onetooneRestApi/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.in28minutes.jpa.hibernate.demo.entity" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;restcontrollers" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1707713828253" version="1.0"/>
-</session>
