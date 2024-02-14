@@ -5,6 +5,7 @@ import java.time.LocalDate;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.validation.constraints.*;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -14,9 +15,16 @@ public class Employee {
 	@Id
 	private int empid;
 	
+	@NotNull
+	@NotBlank(message="emp name is mandatory")
+	@Size(min=4,message="Name should have atleast 4 characters")
 	private String empName;
+	
+	@NotNull(message="emp salary is mandatory")
 	private double empSalary;
+	
 	 @DateTimeFormat(pattern = "yyyy-MM-dd")
+	 @Past(message="joindate should be of past")
 	private LocalDate joindate;
 	
 	

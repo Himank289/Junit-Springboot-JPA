@@ -6,6 +6,13 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Employee Registration Form</title>
+<style>
+.error {
+	color: #ff0000;
+	font-style: italic;
+	font-weight: bold;
+}
+</style>
 </head>
 <body>
 <div align="center">
@@ -15,10 +22,13 @@
 <form:input path="empid"/><br/>
 <form:label path="empName">Emp name:</form:label>
 <form:input path="empName"/><br/>
+<form:errors path="empName" cssClass="error"/> <br/>
 <form:label path="empSalary">Emp Salary:</form:label>
 <form:input path="empSalary"/><br/>
+<form:errors path="empSalary" cssClass="error"/> <br/>
 <form:label path="joindate">Joining Date (yyyy-mm-dd):</form:label>
 <form:input path="joindate"/><br/>
+<form:errors path="joindate" cssClass="error"/> <br/>
 
 <form:label path="empSalary">Emp Salary:</form:label>
 

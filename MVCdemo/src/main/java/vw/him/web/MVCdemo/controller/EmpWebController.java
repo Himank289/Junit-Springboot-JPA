@@ -1,9 +1,12 @@
 package vw.him.web.MVCdemo.controller;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -57,13 +60,31 @@ public class EmpWebController {
 		return "empannsal";
 	}
 	
+//	@PostMapping("/empp")
+//	public String addEmployee( @ModelAttribute("employee") Employee e,ModelMap map) {
+//		Employee em=ed.addEmp(e) ;
+//		map.addAttribute("postedemp", em);
+//		return "postempdet";
+//		
+//	}
+	
+	
 	@PostMapping("/empp")
-	public String addEmployee(@ModelAttribute("employee") Employee e,ModelMap map) {
-		Employee em=ed.addEmp(e) ;
-		map.addAttribute("postedemp", em);
-		return "postempdet";
-		
+	public String addEmployee( @ModelAttribute("employee") @Valid Employee e,BindingResult bindingResult,ModelMap map)
+	{
+		if (bindingResult.hasErrors()) {
+//			logger.info("employee validation failed:Returning back to empform.jsp page");
+			return "empform";
+		}
+		else
+		{
+//		logger.info("postemp:"+e);
+	    Employee em = this.ed.addEmp(e);
+	    map.addAttribute("postedemp", em);
+	    return "postempdet";
+		}
 	}
+	
 	
 	
 	

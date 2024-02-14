@@ -22,7 +22,7 @@ public class MvCdemoApplication implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
-		Employee e1 = new Employee(1,"Himank Tyagi",30000,LocalDate.now());
+		Employee e1 = new Employee(1,"Himank Tyagi",30000,LocalDate.of(2021,04,22));
 		repo.save(e1);
 		
 		Employee e2 = new Employee(2,"Mansi Agarwal",30000,LocalDate.of(2023, 05, 3));
